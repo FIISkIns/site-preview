@@ -88,7 +88,6 @@ body > .container {
 
 .description2 > p {
 	padding-bottom: 0rem;
-	-webkit-margin-after: 0em;
 	overflow: hidden;
 } 
 
@@ -164,13 +163,13 @@ body > .container {
 	transition: all 0.5s;
 }
 
-.button div {
+.button span {
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
 
-.button div:after {
+.button span:after {
 	position: absolute;
 	content: '\00bb';
 	opacity: 0;
@@ -179,11 +178,11 @@ body > .container {
 	transition: 0.5s;
 }
 
-.button:hover div {
+.button:hover span {
 	padding-right: 1rem;
 }
 
-.button:hover div:after {
+.button:hover span:after {
 	opacity: 1;
 	right: 0;
 }

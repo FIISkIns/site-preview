@@ -1,394 +1,231 @@
-
 html, body {
-	margin: 0;
-	padding: 0;
-	font-family: TrebuchetMS, sans-serif;
-	background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  font-family: TrebuchetMS, sans-serif;
+  background-color: #e0e0e0;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-	max-width: 70rem;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav {
-	width: 100%;
-	height: 3.5rem;
-	background-color: #2d6cc2;
-	font-family: HelveticaNeue, sans-serif;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #2d6cc2;
+  font-family: HelveticaNeue, sans-serif;
 }
 
 nav a {
-	height: 3.5rem;
-	padding-left: 1.3rem;
-	padding-right: 1.3rem;
-	color: white;
-	text-decoration: none;
-	display: inline-block;
-	vertical-align: middle;
-	line-height: 3.5rem;
-	float: left;
+  height: 3.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 3.5rem;
+  float: left;
 }
 
 nav a:hover {
-	background-color: #3876C9;
+  background-color: #3876C9;
 }
 
 nav .logo {
-	font-size: 2rem;
-	margin-right: 1rem;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 nav .active {
-	background-color: #3073cf;
+  background-color: #3073cf;
 }
 
 .right {
-	float: right;
+  float: right;
 }
 
-body > .container {
-	margin-top: 2rem;
+body>.container {
+  margin-top: 2rem;
 }
 
 .description {
-	max-width: calc(100% - 4rem);
+  max-width: 90%;
 }
 
 .box {
-	background-color: white;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-	border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
   padding: 1rem;
 }
 
-.description > .box:before {
-	content: " ";
-	display: table;
-}
-
-.description > .box:after {
-	content: " ";
-	display: table;
-	clear: both;
-}
-
 #description-image {
-	float: right;
-	object-fit: cover;
-	max-width: 12rem;
-	max-height: 100%;;
-	border-radius: 0 6px 6px 0;
-	padding-top: 1rem;
-	display: none;
+  float: right;
+  object-fit: cover;
+  max-width: 12rem;
+  max-height: 100%;
+  border-radius: 0 6px 6px 0;
+  padding-top: 1rem;
 }
 
 .description-text {
-	padding: 1rem;
-	float: left;
-	height: auto;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	position: relative;
-	max-width: 100%;
+  padding: 1rem;
+  float: left;
+  height: 8rem;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
 }
 
-.description-text > p {
-	padding-bottom: 0;
-	overflow: hidden;
+.description-text>p {
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 .flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .image-box {
-	margin-top: 2rem;
-	width: 21.8rem;
-	display: flex;
-	flex-direction: column;
-	/*flex: 1;*/
+  margin-top: 2rem;
+  width: 21.8rem;
+  height: 28rem;
 }
 
 .image-box:hover {
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .course-img {
-	height: 13rem;
+  height: 13rem;
 }
 
 .course-image {
-	width: 100%;
-	height: 13rem;
-	border-radius: 6px 6px 0 0;
-	object-fit: cover;
+  width: 100%;
+  height: 13rem;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
 }
 
 .course-description {
-	height: auto;
+  height: 9.5rem;
 }
 
 h3 {
-	padding: 0;
+  padding: 0;
 }
 
 .course-title {
-	padding: 0 0 0 1rem;
+  padding: 0 0 0 1rem;
 }
 
 .course-intro {
-	padding: 0rem 1rem 1rem 1rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 0.8rem;
+  padding: 0rem 1rem 1rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
 }
 
 .button-align {
-	bottom: 0;
-	text-align: center;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	padding-bottom: 1rem;
-	height: auto;
-	width: auto;
-	margin-top: auto;
-	float: none;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 5.5rem;
 }
 
 .button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	bottom: 0;
-	width: 100%;
-	border-radius: 6px;
-	border: none;
-	background-color: rgb(49, 132, 52);
-	color: white;
-	text-align: center;
-	font-size: 1rem;
-	padding: 1rem;
-	transition: all 0.5s;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(49, 132, 52);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  transition: all 0.5s;
 }
 
 .button span {
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .button span:after {
-	position: absolute;
-	content: '\00bb';
-	opacity: 0;
-	top: 0;
-	right: -0.5rem;
-	transition: 0.5s;
+  position: absolute;
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -0.5rem;
+  transition: 0.5s;
 }
 
 .button:hover span {
-	padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .button:hover span:after {
-	opacity: 1;
-	right: 0;
+  opacity: 1;
+  right: 0;
 }
 
-/*Display the course section boxes more larger*/
-/*
-@media screen and (min-width: 40rem) {
-		.flex-container {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.image-box {
-		margin-top: 2rem;
-		width: 38rem;
-		height: 21.8rem;
-	}
-
-	.course-img {
-		height: 21.8rem;
-		float: left;
-	}
-
-	.course-image {
-		width: 20rem;
-		height: 21.8rem;
-		border-radius: 6px 0 0 6px;
-		object-fit: cover;
-	}
-
-	.course-title {
-		padding: 0 1rem 0 21rem;
-	}
-
-
-	.course-description {
-		height: auto;
-	}
-
-	.course-intro {
-		padding: 0rem 1rem 1rem 1rem;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		font-size: 0.8rem;
-	}
-
-	.button-align {
-		text-align: center;
-		padding-right: 1rem;
-		padding-left: 1rem;
-		height: 5.5rem;
-		width: 18rem;
-		float: right;
-	}
-
-	.button {
-		display: block;
-		width: 100%;
-		border-radius: 6px;
-		border: none;
-		background-color: rgb(49, 132, 52);
-		color: white;
-		text-align: center;
-		font-size: 1rem;
-		padding: 1rem;
-		transition: all 0.5s;
-	}
-
-	}*/
-
-	/* For dsplay the description-image on tablet and desktop*/
-	@media screen and (min-width: 40rem) {
-		#description-image {
-			display: inline-block;
-		}
-
-		.description-text {
-			max-width: calc(100% - 12rem)
-		}
-	}
-
-
-	/*Display the course section orizontally on Laptop(L) and Desktop*/
-	@media screen and (min-width: 74rem) {
-		.description {
-			max-width: 70rem;
-		}
-
-		.flex-container {
-			align-items: initial;
-			justify-content: space-between;
-			flex-direction: row;
-			flex-wrap: wrap;
-			max-width: 70rem;
-			height: auto;
-		}
-
-		.image-box {
-			width: 21.8rem;
-			height: auto;
-		}
-
-		.course-img {
-			height: 13rem;
-			float: none;
-		}
-
-		.course-image {
-			width: 100%;
-			height: 13rem;
-			border-radius: 6px 6px 0 0;
-			object-fit: cover;
-		}
-
-		.course-description {
-			height: auto;
-		}
-
-		.course-title {
-			padding: 0 0 0 1rem;
-		}
-
-		.course-intro {
-			padding: 0rem 1rem 1rem 1rem;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			font-size: 0.8rem;
-		}
-
-		.button-align {
-			bottom: 0;
-			text-align: center;
-			padding-right: 1rem;
-			padding-left: 1rem;
-			padding-bottom: 1rem;
-			height: auto;
-			width: auto;
-			float: none;
-		}
-
-		.button {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-			height: auto;
-			border-radius: 6px;
-			border: none;
-			background-color: rgb(49, 132, 52);
-			color: white;
-			text-align: center;
-			font-size: 1rem;
-			padding: 1rem;
-			transition: all 0.5s;
-		}
-
-	}
-
-  .grey-box{
-    background-color: #e0e0e0;
-    padding: 1rem;
+@media screen and (min-width: 70rem) {
+  .description {
+    max-width: 70rem;
   }
-
-  ul.task {
-    list-style-type: circle;
-    margin: 0;
-    padding: 0;
+  .description-text {
+    height: 8rem;
+    width: 55rem;
   }
-
-  a.task{
-    color: black;
-    text-decoration: none;
+  .flex-container {
+    justify-content: space-between;
+    flex-direction: row;
   }
+}
 
-  .grid-container-two-columns {
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-column-gap: 1.5rem;
-  }
+.grey-box {
+  background-color: #e0e0e0;
+  padding: 1rem;
+}
 
+ul.task {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
 
-  .task-image {
-    object-fit: cover;
-    max-width: 30rem;
-    border-radius: 0 6px 6px 0;
-    padding: 1rem;
-  }
+a.task {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-container-two-columns {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 1.5rem;
+}
+
+.task-image {
+  object-fit: cover;
+  max-width: 30rem;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem;
+}

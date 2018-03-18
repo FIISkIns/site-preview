@@ -224,6 +224,9 @@ a.task {
 }
 
 .task-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
   max-width: 30rem;
   border-radius: 0 6px 6px 0;

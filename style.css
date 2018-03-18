@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: TrebuchetMS, sans-serif;
@@ -58,7 +59,7 @@ nav .active {
   float: right;
 }
 
-body>.container{
+body>.container {
   margin-top: 5rem;
 }
 
@@ -66,14 +67,14 @@ body>.container{
   max-width: 90%;
 }
 
-
 .box {
   background-color: white;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   padding: 1rem;
 }
-.grey-box{
+
+.grey-box {
   background-color: #e0e0e0;
   padding: 1rem;
 }
@@ -228,20 +229,13 @@ h5 {
   }
 }
 
-
-
-
-
-
 .grid-container-two-columns {
   display: grid;
   grid-template-columns: 30% auto;
   grid-column-gap: 1.5rem;
 }
 
-.grid-item {
-  
-}
+.grid-item {}
 
 #profile-box-grid {
   display: grid;
@@ -250,7 +244,7 @@ h5 {
   grid-template-columns: 40% auto;
   border-radius: 10px;
   padding: 1rem;
-  grid-column-gap: 1rem;  
+  grid-column-gap: 1rem;
 }
 
 #profile-picture {
@@ -266,7 +260,7 @@ h5 {
 #brief-profile-description {
   width: 100%;
   color: white;
-  margin:auto;
+  margin: auto;
 }
 
 #profile-description {
@@ -285,31 +279,31 @@ h5 {
   display: grid;
   width: 100%;
   grid-template-columns: 25% auto;
-  grid-column-gap: 0.5rem;  
+  grid-column-gap: 0.5rem;
   margin-top: 1rem;
 }
 
-#achievements-container { 
+#achievements-container {
   width: 75%;
   height: 30rem;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   display: grid;
-  grid-row-gap: 0rem;  
+  grid-row-gap: 0rem;
   grid-template-columns: auto;
 }
 
-#achievements-container::-webkit-scrollbar { 
-    display: none; 
+#achievements-container::-webkit-scrollbar {
+  display: none;
 }
 
-#achievements-container hr { 
-    width: 100%;
-    height: 0;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+#achievements-container hr {
+  width: 100%;
+  height: 0;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .achievement-icon {
@@ -332,18 +326,18 @@ h5 {
 }
 
 .progress-bar {
- width: 90%;   
- height: 1.5rem;
- border: 2px solid  #80d4ff;
- border-radius: 1rem;
- padding: 0;
- position: relative;
- margin-top: 1rem;
+  width: 90%;
+  height: 1.5rem;
+  border: 2px solid #80d4ff;
+  border-radius: 1rem;
+  padding: 0;
+  position: relative;
+  margin-top: 1rem;
 }
 
 .percentage {
   width: 100%;
-  position: absolute;   
+  position: absolute;
   vertical-align: middle;
   text-align: center;
   height: 100%;
@@ -352,22 +346,26 @@ h5 {
 }
 
 .bar100 {
- border-radius: 2rem;
- background-color: #80d4ff;
- width: 100%;
- height: 100%;
+  border-radius: 2rem;
+  background-color: #80d4ff;
+  width: 100%;
+  height: 100%;
 }
 
 .bar50 {
- border-radius: 2rem 0 0 2rem;
- background-color: #80d4ff;
- width: 50%;
- height: 100%;
+  border-radius: 2rem 0 0 2rem;
+  background-color: #80d4ff;
+  width: 50%;
+  height: 100%;
 }
 
 .bar25 {
- border-radius: 2rem 0 0 2rem;
- background-color: #80d4ff;
- width: 25%;
- height: 100%;
+  border-radius: 2rem 0 0 2rem;
+  background-color: #80d4ff;
+  width: 25%;
+  height: 100%;
+}
+
+.big {
+  font-size: larger;
 }

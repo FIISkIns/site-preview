@@ -83,12 +83,12 @@ nav .active {
 	max-width: calc(100% - 4rem);
 }
 
-.description > .box:before {
+.description > .box::before {
 	content: " ";
 	display: table;
 }
 
-.description > .box:after {
+.description > .box::after {
 	content: " ";
 	display: table;
 	clear: both;
@@ -230,7 +230,7 @@ a.task {
 	transition: 0.5s;
 }
 
-.button span:after {
+.button span::after {
 	position: absolute;
 	content: '\00bb';
 	opacity: 0;
@@ -243,7 +243,7 @@ a.task {
 	padding-right: 1rem;
 }
 
-.button:hover span:after {
+.button:hover span::after {
 	opacity: 1;
 	right: 0;
 }
@@ -354,7 +354,6 @@ a.task {
 	vertical-align: middle;
 	text-align: center;
 	height: 100%;
-	vertical-align: middle;
 	line-height: 1.5rem;
 }
 
@@ -420,7 +419,6 @@ a.task {
 	.course-description {
 		position: relative;
 		height: auto;
-		width: calc(100%-20rem);
 		float: right;
 		clear: none;
 	}
@@ -444,7 +442,6 @@ a.task {
 		padding-left: 1rem;
 		padding-bottom: 1rem;
 		height: auto;
-		width: calc(100%-20rem);
 		float: right;
 		clear: none;
 	}

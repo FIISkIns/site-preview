@@ -5,10 +5,6 @@ html,body {
 	background-color: #e0e0e0;
 }
 
-div:last-child {
-	margin-bottom: 1rem;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -58,8 +54,9 @@ nav .active {
 	float: right;
 }
 
-body>.container {
+body > .container {
 	margin-top: 5rem;
+	margin-bottom: 2rem;
 }
 
 .description {
@@ -90,18 +87,17 @@ body>.container {
 	max-width: 12rem;
 	max-height: 100%;;
 	border-radius: 0 6px 6px 0;
-	padding-top: 1rem;
 	display: none;
 }
 
 .description-text {
-	padding: 1rem;
 	float: left;
 	height: auto; 
 	overflow: hidden;
 	text-overflow: ellipsis;
 	position: relative; 
 	max-width: 100%;
+	padding: 0;
 }
 
 .description-text > p {
@@ -123,6 +119,7 @@ body>.container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	padding: 0;
 }
 
 .image-box:hover {
@@ -217,7 +214,7 @@ h5 {
 	right: 0;
 }
 
-/*Display the course section boxes more larger*/
+/*Display the course section boxes more larger on tablet*/
 @media screen and (min-width: 40rem) {
 	.flex-container {
 		display: flex;
@@ -294,7 +291,7 @@ h5 {
 
 }
 
-/* For dsplay the description-image on tablet and desktop*/
+/* Display the description-image on tablet and desktop*/
 @media screen and (min-width: 40rem) {
 	#description-image {
 		display: inline-block;
@@ -439,11 +436,8 @@ h5 {
 
 #achievements-container {
 	width: 75%;
-	height: 30rem;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: auto;
-	overflow-x: hidden;
 	display: grid;
 	grid-row-gap: 0rem;
 	grid-template-columns: auto;

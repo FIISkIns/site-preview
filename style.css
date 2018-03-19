@@ -5,10 +5,6 @@ html,body {
 	background-color: #e0e0e0;
 }
 
-div:last-child {
-	margin-bottom: 1rem;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -58,12 +54,13 @@ nav .active {
 	float: right;
 }
 
-body>.container {
+body > .container {
 	margin-top: 5rem;
+	margin-bottom: 2rem;
 }
 
 .description {
-	max-width: 90%;
+	max-width: calc(100% - 4rem);
 }
 
 .box {
@@ -73,24 +70,34 @@ body>.container {
 	padding: 1rem;
 }
 
+.description > .box:before {
+	content: " ";
+	display: table;
+}
+
+.description > .box:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
 
 #description-image {
 	float: right;
 	object-fit: cover;
 	max-width: 12rem;
-	max-height: 100%;
+	max-height: 100%;;
 	border-radius: 0 6px 6px 0;
-	padding-top: 1rem;
+	display: none;
 }
 
 .description-text {
-	padding: 1rem;
 	float: left;
-	height: 8rem;
-	max-width: 70%;
+	height: auto; 
 	overflow: hidden;
 	text-overflow: ellipsis;
-	position: relative;
+	position: relative; 
+	max-width: 100%;
+	padding: 0;
 }
 
 .description-text > p {
@@ -103,16 +110,16 @@ body>.container {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 70rem;
-	margin-left: auto;
-	margin-right: auto;
 	align-items: center;
+	height: auto;
 }
 
 .image-box {
 	margin-top: 2rem;
-	width: 21.8rem;
-	height: 28rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
 }
 
 .image-box:hover {
@@ -121,6 +128,7 @@ body>.container {
 
 .course-img {
 	height: 13rem;
+	float: none;
 }
 
 .course-image {
@@ -131,7 +139,8 @@ body>.container {
 }
 
 .course-description {
-	height: 9.5rem;
+	height: auto;
+	float: none;
 }
 
 h3 {
@@ -154,16 +163,22 @@ h5 {
 }
 
 .button-align {
+	bottom: 0;
 	text-align: center;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	height: 5.5rem;
+	padding-bottom: 1rem;
+	height: auto;
+	width: auto;
+	margin-top: auto;
+	float: none;
 }
 
 .button {
-	display: inline-block;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	bottom: 0;
 	width: 100%;
 	border-radius: 6px;
 	border: none;
@@ -199,18 +214,170 @@ h5 {
 	right: 0;
 }
 
-@media screen and (min-width: 70rem) {
+/*Display the course section boxes more larger on tablet*/
+@media screen and (min-width: 40rem) {
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.image-box {
+		margin-top: 2rem;
+		width: auto;
+		height: auto;
+	}
+
+	.course-img {
+		float: left;
+	}
+
+	.course-image {
+		width: 20rem;
+		height: auto; 
+		border-radius: 6px 0 0 6px;
+		object-fit: cover;
+	}
+
+	.course-description {
+		position: relative;
+		height: auto;
+		width: calc(100%-20rem); 
+		float: right;
+		clear: none; 
+	}
+
+	.course-title {
+		padding: 0 0 0 1rem;
+	}
+
+	.course-intro {
+		padding: 0rem 1rem 1rem 1rem;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+		font-size: 0.8rem;
+	}
+
+	.button-align {
+		position: relative;
+		bottom: 0;
+		text-align: center;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+		height: auto;
+		width: calc(100%-20rem);
+		float: right;
+		clear: none;
+	}
+
+	.button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: auto;
+		border-radius: 6px;
+		border: none;
+		background-color: rgb(49, 132, 52);
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+		padding: 1rem;
+		transition: all 0.5s;
+	}
+
+}
+
+/* Display the description-image on tablet and desktop*/
+@media screen and (min-width: 40rem) {
+	#description-image {
+		display: inline-block;
+	}
+
+	.description-text {
+		max-width: calc(100% - 12rem)
+	}
+}
+
+
+/*Display the course section orizontally on Laptop(L) and Desktop*/
+@media screen and (min-width: 74rem) {
 	.description {
 		max-width: 70rem;
 	}
-	.description-text {
-		height: 8rem;
-		width: 55rem;
-	}
+
 	.flex-container {
+		align-items: initial;
 		justify-content: space-between;
 		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 70rem;
+		height: auto;
 	}
+
+	.image-box {
+		width: 21.8rem;
+		height: auto;
+	}
+
+	.course-img {
+		height: 13rem;
+		float: none;
+	}
+
+	.course-image {
+		width: 100%;
+		height: 13rem; 
+		border-radius: 6px 6px 0 0;
+		object-fit: cover;
+	}
+
+	.course-description {
+		height: auto;
+		float: none;
+	}
+
+	.course-title {
+		padding: 0 0 0 1rem;
+	}
+
+	.course-intro {
+		padding: 0rem 1rem 1rem 1rem;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+		font-size: 0.8rem;
+	}
+
+	.button-align {
+		bottom: 0;
+		text-align: center;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+		height: auto;
+		width: auto;
+		float: none;
+	}
+
+	.button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: auto;
+		border-radius: 6px;
+		border: none;
+		background-color: rgb(49, 132, 52);
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+		padding: 1rem;
+		transition: all 0.5s;
+	}
+
 }
 
 .profile-body-container {
@@ -269,11 +436,8 @@ h5 {
 
 #achievements-container {
 	width: 75%;
-	height: 30rem;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: auto;
-	overflow-x: hidden;
 	display: grid;
 	grid-row-gap: 0rem;
 	grid-template-columns: auto;

@@ -1,0 +1,74 @@
+{
+  "global": {
+    "ignore": [
+      ".git/**",
+
+      "node_modules/**",
+      "bower_components/**",
+      "jspm_packages/**",
+      ".npm/**",
+      "vendor/**",
+
+      "lib-cov/**",
+      "coverage/**",
+      ".nyc_output/**",
+
+      "**/*.min.*"
+    ]
+  },
+
+  "jslint": {
+    "files": [
+      "**/*.js",
+      "**/*.json"
+    ],
+    "ignore": [],
+    "rcFile": ".jslint.json"
+  },
+
+  "jshint": {
+    "files": [
+      "**/*.js",
+      "**/*.json"
+    ],
+    "ignore": [],
+    "rcFile": ".jshint.json"
+  },
+
+  "eslint": {
+    "files": [
+      "**/*.js"
+    ],
+    "ignore": [],
+    "rcFile": ".eslint.json"
+  },
+
+  "stylelint": {
+    "files": [
+      "**/*.css",
+      "**/*.scss",
+      "**/*.less",
+      "**/*.sss"
+    ],
+    "ignore": [],
+    "rcFile": ".stylelint.json"
+  },
+
+  "htmlhint": {
+    "files": [
+      "**/*.html",
+      "**/*.htm"
+    ],
+    "ignore": [],
+    "rcFile": ".htmlhint.json"
+  },
+
+  "w3cjs": {
+    "files": [
+      "**/*.html",
+      "**/*.htm"
+    ],
+    "ignore": [],
+    "rcFile": null
+  }
+}

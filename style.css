@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	font-family: TrebuchetMS, sans-serif;
@@ -38,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #3876C9;
+	background-color: #3876c9;
 }
 
 nav .logo {
@@ -70,12 +71,12 @@ body > .container {
 	padding: 1rem;
 }
 
-.description > .box:before {
+.description > .box::before {
 	content: " ";
 	display: table;
 }
 
-.description > .box:after {
+.description > .box::after {
 	content: " ";
 	display: table;
 	clear: both;
@@ -85,17 +86,17 @@ body > .container {
 	float: right;
 	object-fit: cover;
 	max-width: 12rem;
-	max-height: 100%;;
+	max-height: 100%;
 	border-radius: 0 6px 6px 0;
 	display: none;
 }
 
 .description-text {
 	float: left;
-	height: auto; 
+	height: auto;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	position: relative; 
+	position: relative;
 	max-width: 100%;
 	padding: 0;
 }
@@ -156,7 +157,7 @@ h5 {
 }
 
 .course-intro {
-	padding: 0rem 1rem 1rem 1rem;
+	padding: 0 1rem 1rem 1rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	font-size: 0.8rem;
@@ -196,7 +197,7 @@ h5 {
 	transition: 0.5s;
 }
 
-.button span:after {
+.button span::after {
 	position: absolute;
 	content: '\00bb';
 	opacity: 0;
@@ -209,12 +210,12 @@ h5 {
 	padding-right: 1rem;
 }
 
-.button:hover span:after {
+.button:hover span::after {
 	opacity: 1;
 	right: 0;
 }
 
-/*Display the course section boxes more larger on tablet*/
+/* Larger course section boxes on tablets */
 @media screen and (min-width: 40rem) {
 	.flex-container {
 		display: flex;
@@ -236,7 +237,7 @@ h5 {
 
 	.course-image {
 		width: 20rem;
-		height: auto; 
+		height: auto;
 		border-radius: 6px 0 0 6px;
 		object-fit: cover;
 	}
@@ -244,9 +245,8 @@ h5 {
 	.course-description {
 		position: relative;
 		height: auto;
-		width: calc(100%-20rem); 
 		float: right;
-		clear: none; 
+		clear: none;
 	}
 
 	.course-title {
@@ -254,9 +254,9 @@ h5 {
 	}
 
 	.course-intro {
-		padding: 0rem 1rem 1rem 1rem;
+		padding: 0 1rem 1rem 1rem;
 		overflow: hidden;
-		text-overflow: ellipsis; 
+		text-overflow: ellipsis;
 		font-size: 0.8rem;
 	}
 
@@ -268,7 +268,6 @@ h5 {
 		padding-left: 1rem;
 		padding-bottom: 1rem;
 		height: auto;
-		width: calc(100%-20rem);
 		float: right;
 		clear: none;
 	}
@@ -288,22 +287,20 @@ h5 {
 		padding: 1rem;
 		transition: all 0.5s;
 	}
-
 }
 
-/* Display the description-image on tablet and desktop*/
+/* Display the description image only on tablet and desktop */
 @media screen and (min-width: 40rem) {
 	#description-image {
 		display: inline-block;
 	}
 
 	.description-text {
-		max-width: calc(100% - 12rem)
+		max-width: calc(100% - 12rem);
 	}
 }
 
-
-/*Display the course section orizontally on Laptop(L) and Desktop*/
+/* Display the course section horizontally on desktop */
 @media screen and (min-width: 74rem) {
 	.description {
 		max-width: 70rem;
@@ -330,7 +327,7 @@ h5 {
 
 	.course-image {
 		width: 100%;
-		height: 13rem; 
+		height: 13rem;
 		border-radius: 6px 6px 0 0;
 		object-fit: cover;
 	}
@@ -345,9 +342,9 @@ h5 {
 	}
 
 	.course-intro {
-		padding: 0rem 1rem 1rem 1rem;
+		padding: 0 1rem 1rem 1rem;
 		overflow: hidden;
-		text-overflow: ellipsis; 
+		text-overflow: ellipsis;
 		font-size: 0.8rem;
 	}
 
@@ -377,7 +374,6 @@ h5 {
 		padding: 1rem;
 		transition: all 0.5s;
 	}
-
 }
 
 .profile-body-container {
@@ -385,8 +381,6 @@ h5 {
 	grid-template-columns: 30% auto;
 	grid-column-gap: 1.5rem;
 }
-
-.grid-item {}
 
 #profile-box-grid {
 	display: grid;
@@ -439,7 +433,7 @@ h5 {
 	margin-left: auto;
 	margin-right: auto;
 	display: grid;
-	grid-row-gap: 0rem;
+	grid-row-gap: 0;
 	grid-template-columns: auto;
 }
 
@@ -450,7 +444,7 @@ h5 {
 #achievements-container hr {
 	width: 100%;
 	height: 0;
-	margin-top: 0rem;
+	margin-top: 0;
 	margin-bottom: 1rem;
 }
 
@@ -489,7 +483,6 @@ h5 {
 	vertical-align: middle;
 	text-align: center;
 	height: 100%;
-	vertical-align: middle;
 	line-height: 1.5rem;
 }
 

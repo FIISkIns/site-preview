@@ -245,7 +245,7 @@ a.task {
 	position: relative;
 }
 
-.grid-itemm {
+.sticky-grid-item {
 	width: 100%;
 	position: -webkit-sticky;
   	position: sticky;

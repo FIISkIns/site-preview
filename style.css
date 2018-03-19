@@ -242,10 +242,14 @@ a.task {
 	display: grid;
 	grid-template-columns: 30% auto;
 	grid-column-gap: 1.5rem;
+	position: relative;
 }
 
-.grid-item {
+.grid-itemm {
 	width: 100%;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 5rem;
 }
 
 #profile-box-grid {

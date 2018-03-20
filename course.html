@@ -8,17 +8,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Seniuc Bogdan, Popescu Georgian Stefan, Gafitescu Petru Marian, Pomohaci Alexandru">
 </head>
-
 <body>
 	<nav>
 		<div class="container">
-			<a href="index.html" class="logo">SkIns</a>
-			<a href="index.html">Learn</a>
-			<a href="course.html" class="active">Course</a>
-			<a href="profile.html">Profile</a>
-			<a href="#" class="right"><i class="fab fa-fw fa-facebook"></i> Log in</a>
+			<a href="index.html" class="item logo">SkIns</a>
+
+			<a tabindex="4" href="#" class="item right"><i class="fab fa-fw fa-facebook"></i> Log in</a>
+
+			<div class="menu">
+				<a tabindex="0" href="index.html" class="item">Learn</a>
+				<div tabindex="1" id="coursemenu" class="item active">
+					<span>Courses &#9662;</span>
+					<div class="submenu">
+						<div class="submenu-section">YOUR COURSES</div>
+						<a href="course.html" class="item active">Origami</a>
+						<div class="submenu-section">AVAILABLE COURSES</div>
+						<a href="course.html" class="item">Survival</a>
+						<a href="course.html" class="item">Self-defence</a>
+					</div>
+				</div>
+				<a tabindex="2" href="profile.html" class="item">Profile</a>
+			</div>
 		</div>
 	</nav>
+
 	<div class="container">
 		<div class="grid-container-two-columns">
 			<div class="grey-box">

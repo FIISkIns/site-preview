@@ -11,11 +11,24 @@
 <body>
 	<nav>
 		<div class="container">
-			<a href="index.html" class="logo">SkIns</a>
-			<a href="index.html" class="active">Learn</a>
-			<a href="course.html">Course</a>
-			<a href="profile.html">Profile</a>
-			<a href="#" class="right"><i class="fab fa-fw fa-facebook"></i> Log in</a>
+			<a href="index.html" class="item logo">SkIns</a>
+
+			<a tabindex="4" href="#" class="item right"><i class="fab fa-fw fa-facebook"></i> Log in</a>
+
+			<div class="menu">
+				<a tabindex="0" href="index.html" class="item active">Learn</a>
+				<div tabindex="1" id="coursemenu" class="item">
+					<span>Courses &#9662;</span>
+					<div class="submenu">
+						<div class="submenu-section">YOUR COURSES</div>
+						<a href="course.html" class="item">Origami</a>
+						<div class="submenu-section">AVAILABLE COURSES</div>
+						<a href="course.html" class="item">Survival</a>
+						<a href="course.html" class="item">Self-defence</a>
+					</div>
+				</div>
+				<a tabindex="2" href="profile.html" class="item">Profile</a>
+			</div>
 		</div>
 	</nav>
 

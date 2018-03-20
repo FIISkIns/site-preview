@@ -2,13 +2,12 @@
 
 FIISkIns is a modular web app intended to be used a virtual instructor. 
 
-## Site-preview
-FIISkIns/site-preview is a repository created for showcasing the front-end of the application.
+Site-preview is a repository created for showcasing the front-end of the application.
 For this part we chose three courses: Origami, Self-Defence and Survival. 
 All the pages are currently just templates:
--the Learn page shows how the courses' description will be organized
--the Profile page features a fictional user 
--the Course page highlights how the information will fit in page.
+- the Learn page shows how the courses' description will be organized
+- the Profile page features a fictional user 
+- the Course page highlights how the information will fit in page.
 
 
 ### Structure

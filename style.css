@@ -274,7 +274,7 @@ a.task {
 }
 
 .grey-box {
-	padding: 1.5rem;
+	padding: 0 1.5rem 1.5rem 1.5rem;
 	color: #5c5c5c;
 	overflow: hidden;
 }
@@ -797,11 +797,8 @@ a.task {
 	}
 
 	.grey-box {
-		height: 0;
-		padding: 0;
-		margin-top: 0;
 		max-height: 0;
-		transition: max-height 1.5s ease;
+		transition: max-height 2s cubic-bezier(0, 1, 0, 1);
 	}
 
 	#taskmenu {
@@ -816,18 +813,13 @@ a.task {
 		cursor: pointer;
 		margin-top: 0;
 		padding-top: 0;
-		margin-bottom: 1rem;
 		font-size: 1.5rem;
+		margin-bottom: 0;
 	}
 
 	#taskmenu:focus .grey-box {
-		height: auto;
-		padding: 1.5rem;
-		max-height: 40rem;
-	}
-
-	#taskmenu:focus #task-button {
-		margin-bottom: 0;
+		max-height: 100rem;
+		transition: max-height 2s ease;
 	}
 
 	.task-container {
@@ -842,7 +834,7 @@ a.task {
 		display: grid;
 		grid-template-columns: auto;
 		grid-column-gap: 1rem;
-		padding: 1rem;
+		padding: 1.5rem 1rem 1rem 1rem;
 	}
 
 	.task-image {
@@ -857,15 +849,11 @@ a.task {
 	#taskmenu {
 		padding-top: 0;
 		margin-top: 0;
-		padding-bottom: 1rem;
 	}
 
 	.grey-box {
-		height: 0;
-		margin-top: 0;
-		padding: 0;
 		max-height: 0;
-		transition: max-height 1.5s ease;
+		transition: max-height 2s cubic-bezier(0, 1, 0, 1);
 	}
 
 	#task-button {
@@ -879,9 +867,8 @@ a.task {
 	}
 
 	#taskmenu:focus .grey-box {
-		height: auto;
-		padding: 1.5rem;
-		max-height: 30rem;
+		max-height: 100rem;
+		transition: max-height 2s ease;
 	}
 
 	.task-container {

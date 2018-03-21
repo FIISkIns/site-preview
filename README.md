@@ -1,4 +1,4 @@
-# FIISkIns - FII Skill Instructor
+# FII Skill Instructor - Site Preview [![Build Status](https://travis-ci.org/FIISkIns/site-preview.svg?branch=master)](https://travis-ci.org/FIISkIns/site-preview)
 
 FIISkIns is a modular web app intended to be used as a virtual instructor.
 

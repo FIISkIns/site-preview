@@ -183,10 +183,6 @@ nav .user-image-small {
 	padding: 0;
 }
 
-.description-text > h3 {
-	margin-top: 0;
-}
-
 .description-text > p {
 	padding-bottom: 0;
 }
@@ -509,14 +505,6 @@ a.task {
 /* Larger course section boxes on tablet */
 
 @media screen and (min-width: 40rem) {
-	.flex-container {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.image-box {
 		flex-direction: row;
 	}
@@ -527,10 +515,8 @@ a.task {
 	}
 
 	.course-image {
-		width: 100%;
 		height: 100%;
 		border-radius: 6px 0 0 6px;
-		object-fit: cover;
 	}
 
 	.course-description {
@@ -541,36 +527,11 @@ a.task {
 		padding: 0 0 0 1rem;
 	}
 
-	.course-intro {
-		padding: 0 1rem 1rem 1rem;
-		font-size: 0.8rem;
-	}
-
 	.button-align {
 		position: relative;
 		width: 100%;
-		bottom: 0;
-		text-align: center;
-		padding-right: 1rem;
-		padding-left: 1rem;
-		padding-bottom: 1rem;
 		float: right;
 		clear: none;
-	}
-
-	.button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		border-radius: 6px;
-		border: none;
-		background-color: rgb(49, 132, 52);
-		color: white;
-		text-align: center;
-		font-size: 1rem;
-		padding: 1rem;
-		transition: all 0.5s;
 	}
 }
 
@@ -597,7 +558,6 @@ a.task {
 		align-items: initial;
 		justify-content: space-between;
 		flex-direction: row;
-		flex-wrap: wrap;
 		max-width: 70rem;
 	}
 
@@ -613,10 +573,7 @@ a.task {
 	}
 
 	.course-image {
-		width: 100%;
-		height: 13rem;
 		border-radius: 6px 6px 0 0;
-		object-fit: cover;
 	}
 
 	.course-description {
@@ -630,34 +587,8 @@ a.task {
 		padding: 0 0 0 1rem;
 	}
 
-	.course-intro {
-		padding: 0 1rem 1rem 1rem;
-		font-size: 0.8rem;
-	}
-
 	.button-align {
-		margin-top: auto;
-		bottom: 0;
-		text-align: center;
-		padding-right: 1rem;
-		padding-left: 1rem;
-		padding-bottom: 1rem;
 		float: none;
-	}
-
-	.button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		border-radius: 6px;
-		border: none;
-		background-color: rgb(49, 132, 52);
-		color: white;
-		text-align: center;
-		font-size: 1rem;
-		padding: 1rem;
-		transition: all 0.5s;
 	}
 }
 

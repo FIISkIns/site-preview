@@ -277,7 +277,6 @@ a.task {
 	overflow: hidden;
 }
 
-
 /* Button CSS */
 
 .button-align {
@@ -768,7 +767,7 @@ a.task {
 	.grey-box {
 		height: 0;
 		max-height: 0;
-        transition: max-height 2s ease;
+		transition: max-height 2s ease;
 	}
 
 	#task-button {
@@ -779,7 +778,7 @@ a.task {
 		font-size: 1.5rem;
 	}
 
-	#taskmenu:focus .grey-box{
+	#taskmenu:focus .grey-box {
 		height: auto;
 		max-height: 40rem;
 	}
@@ -804,13 +803,13 @@ a.task {
 		padding: 1rem;
 	}
 
-	ul.task{
+	ul.task {
 		margin-left: 0.2rem;
 	}
+	
 	.grey-box {
 		height: 0;
 		max-height: 0;
-
 	}
 
 	#task-button {
@@ -820,7 +819,7 @@ a.task {
 		font-size: 1rem;
 	}
 
-	#taskmenu:focus .grey-box{
+	#taskmenu:focus .grey-box {
 		height: auto;
 		max-height: 30rem;
 	}

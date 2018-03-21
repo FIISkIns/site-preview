@@ -1,6 +1,6 @@
 # FIISkIns - FII Skill Instructor
 
-FIISkIns is a modular web app intended to be used a virtual instructor. 
+FIISkIns is a modular web app intended to be used as a virtual instructor. 
 
 Site-preview is a repository created for showcasing the front-end of the application.
 For this part we chose three courses: Origami, Self-Defence and Survival. 

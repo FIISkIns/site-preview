@@ -33,12 +33,6 @@ body > .container {
 	padding: 1rem;
 }
 
-.grid-container-two-columns {
-	display: grid;
-	grid-template-columns: 20% auto;
-	grid-column-gap: 1.5rem;
-}
-
 .black-hr {
 	border: 0;
 	height: 5px;
@@ -250,6 +244,12 @@ nav .user-image-small {
 }
 
 /* Course Page CSS */
+
+.grid-container-two-columns {
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-column-gap: 1.5rem;
+}
 
 ul.task {
 	list-style-type: circle;
@@ -749,4 +749,95 @@ a.task {
 		height: 3rem;
 		margin-top: 1rem;
 	}
+}
+
+/* Course page mobile layout */
+
+@media (max-width: 40rem) {
+	.grid-container-two-columns{
+		display: block;
+		padding: 1rem;
+	}
+
+	.task-image{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		object-fit: cover;
+		max-width: 18rem;
+		border-radius: 0 6px 6px 0;
+		padding: 1rem;
+	}
+
+	.grey-box{
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	#task-button{
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		margin-bottom: 2rem;
+		font-size: 1.5rem;
+	}
+
+	#taskmenu:focus .grey-box,
+	#taskmenu:hover .grey-box {
+		display: block;
+	}
+
+	#taskmenu:focus #task-button,
+	#taskmenu:hover #task-button {
+		margin-bottom: 0;
+	}
+}
+
+/* Course page tablet layout */
+
+@media (max-width: 74rem) and (min-width: 40rem) {
+	.grid-container-two-columns{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 1rem;
+		padding: 1rem;
+	}
+
+	.task-image{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		object-fit: cover;
+		max-width: 25rem;
+		border-radius: 0 6px 6px 0;
+		padding: 1rem;
+	}
+
+	.grey-box{
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	#task-button{
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		font-size: 1rem;
+	}
+
+	#taskmenu:focus .grey-box,
+	#taskmenu:hover .grey-box {
+		display: block;
+	}
+
 }

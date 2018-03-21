@@ -256,6 +256,10 @@ ul.task {
 	padding: 0;
 }
 
+ul.task > li {
+	margin-bottom: 0.2rem;
+}
+
 a.task {
 	color: #5c5c5c;
 	text-decoration: none;

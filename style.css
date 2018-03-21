@@ -33,12 +33,6 @@ body > .container {
 	padding: 1rem;
 }
 
-.grid-container-two-columns {
-	display: grid;
-	grid-template-columns: 20% auto;
-	grid-column-gap: 1.5rem;
-}
-
 .black-hr {
 	border: 0;
 	height: 5px;
@@ -305,6 +299,12 @@ a.task {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
+}
+
+.task-container {
+	max-width: 70rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Button CSS */
@@ -787,6 +787,7 @@ a.task {
 @media (max-width: 40rem) {
 	.grid-container-two-columns {
 		display: block;
+		margin-top: 0;
 		padding: 1rem;
 	}
 
@@ -797,8 +798,14 @@ a.task {
 	.grey-box {
 		height: 0;
 		padding: 0;
+		margin-top: 0;
 		max-height: 0;
 		transition: max-height 2s ease;
+	}
+
+	#taskmenu {
+		padding-top: 0;
+		margin-top: 0;
 	}
 
 	#task-button {
@@ -820,6 +827,10 @@ a.task {
 
 	#taskmenu:focus #task-button {
 		margin-bottom: 0;
+	}
+
+	.task-container {
+		margin-top: 0;
 	}
 }
 
@@ -843,11 +854,14 @@ a.task {
 	}
 
 	#taskmenu {
+		padding-top: 0;
+		margin-top: 0;
 		padding-bottom: 1rem;
 	}
 
 	.grey-box {
 		height: 0;
+		margin-top: 0;
 		padding: 0;
 		max-height: 0;
 	}
@@ -866,5 +880,9 @@ a.task {
 		height: auto;
 		padding: 1.5rem;
 		max-height: 30rem;
+	}
+
+	.task-container {
+		margin-top: 3rem;
 	}
 }

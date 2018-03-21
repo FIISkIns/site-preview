@@ -296,6 +296,10 @@ a.task {
 	display: none;
 }
 
+#taskmenu:focus {
+	outline: none;
+}
+
 /* Button CSS */
 
 .button-align {

@@ -304,6 +304,7 @@ a.task {
 .task-container {
 	max-width: 70rem;
 	margin-left: auto;
+	margin-top: 5rem;
 	margin-right: auto;
 }
 
@@ -800,7 +801,7 @@ a.task {
 		padding: 0;
 		margin-top: 0;
 		max-height: 0;
-		transition: max-height 2s ease;
+		transition: max-height 1.5s ease;
 	}
 
 	#taskmenu {
@@ -864,6 +865,7 @@ a.task {
 		margin-top: 0;
 		padding: 0;
 		max-height: 0;
+		transition: max-height 1.5s ease;
 	}
 
 	#task-button {

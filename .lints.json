@@ -70,5 +70,37 @@
     ],
     "ignore": [],
     "rcFile": null
+  },
+
+  "markdownlint": {
+    "files": [
+      "**/*.markdown",
+      "**/*.mdown",
+      "**/*.mkdn",
+      "**/*.md",
+      "**/*.mkd",
+      "**/*.mdwn",
+      "**/*.mdtxt",
+      "**/*.mdtext",
+      "**/*.rmd"
+    ],
+    "ignore": [],
+    "rcFile": ".markdownlint.json"
+  },
+
+  "remark-lint": {
+    "files": [
+      "**/*.markdown",
+      "**/*.mdown",
+      "**/*.mkdn",
+      "**/*.md",
+      "**/*.mkd",
+      "**/*.mdwn",
+      "**/*.mdtxt",
+      "**/*.mdtext",
+      "**/*.rmd"
+    ],
+    "ignore": [],
+    "rcFile": ".remarklint.json"
   }
 }

@@ -241,7 +241,7 @@ nav .user-image-small {
 
 .grid-container-two-columns {
 	display: grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 20% calc(80% - 1.5rem);
 	grid-column-gap: 1.5rem;
 }
 
